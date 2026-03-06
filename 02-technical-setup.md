@@ -1,7 +1,8 @@
-# Technical Setup
+# Lab Technical Setup
 
-[![Wazuh](https://img.shields.io/badge/Wazuh-4.7-blue.svg)](https://wazuh.com)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Unix-lightgrey.svg)](https://wazuh.com)
+![Wazuh](https://img.shields.io/badge/SIEM-Wazuh-005571?style=for-the-badge&logo=wazuh&logoColor=white)
+![TheHive](https://img.shields.io/badge/Case%20Management-TheHive-FF6C37?style=for-the-badge&logo=thehive&logoColor=white)
+![n8n](https://img.shields.io/badge/SOAR-n8n-3b0a6b?style=for-the-badge&logo=n8n&logoColor=white)
 
 ## Prerequisites
 
