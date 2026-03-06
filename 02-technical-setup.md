@@ -1,7 +1,22 @@
 🛠️ Technical Setup
-Wazuh Manager (Ubuntu)
-bash
-# Installation
+
+# Wazuh 4.7 Installation on Ubuntu
+
+[![Wazuh](https://img.shields.io/badge/Wazuh-4.7-blue.svg)](https://wazuh.com)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Unix-lightgrey.svg)](https://wazuh.com)
+
+## Prerequisites
+
+Before starting the installation, ensure your system meets the following requirements:
+
+- **Operating System**: Ubuntu
+- **RAM**: 8GB
+- **CPU**: 2 cores
+- **Storage**: 50GB
+
+## 🚀 Quick Installation
+
+```bash
 curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
 sudo bash ./wazuh-install.sh -a
 
