@@ -1,6 +1,6 @@
 ## n8n Workflow Configuration
 
-[<img width="506" height="871" alt="image" src="https://github.com/user-attachments/assets/3d4a088d-6e98-4a95-9d0d-2bd179ee48c9" />](https://i.imgur.com/hYn8ds6.png)
+![n8n Workflow Diagram](https://i.imgur.com/hYn8ds6.png)
 
 ### Webhook Node
 | Setting | Value |
