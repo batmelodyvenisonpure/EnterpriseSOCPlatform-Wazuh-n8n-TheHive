@@ -78,6 +78,79 @@ Install AtomicRedTeam Framework with Test Definitions
 ```bash
 Install-AtomicRedTeam -getAtomics -Force
 ```
+### Step 8: Installing n8n on Ubuntu Machine
+
+Before starting, ensure your system is up to date:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+n8n will require Node.js. 
+
+```bash
+sudo apt install -y nodejs
+```
+Install n8n Globally
+
+```bash
+sudo npm install -g n8n
+```
+
+Install PM2 Globally
+
+```bash
+sudo npm install -g pm2
+```
+
+Create a PM2 Ecosystem File
+
+```bash
+nano ecosystem.config.js
+```
+Add the following config:
+
+```bash
+module.exports = {
+  apps: [{
+    name: "n8n",
+    script: "n8n",
+    args: "start",
+    env: {
+      N8N_PORT: 5678,
+      N8N_HOST: "localhost",
+      N8N_PROTOCOL: "http",
+      WEBHOOK_URL: "http://localhost:5678/",
+      N8N_BASIC_AUTH_ACTIVE: true,
+      N8N_BASIC_AUTH_USER: "user",
+      N8N_BASIC_AUTH_PASSWORD: "pass",
+      TZ: "UTC"
+    }
+  }]
+
+
+};
+```
+Start n8n with PM2 using the config file:
+
+```bash
+pm2 start ecosystem.config.js
+```
+
+Configure PM2 to Start on Boot
+
+```bash
+pm2 startup
+```
+
+Allow Port 5678 on Firewall
+
+```bash
+sudo ufw allow 5678
+```
+
+
+
 
 
 
